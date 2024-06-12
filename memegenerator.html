@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme Generator</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div id="background"></div>
+
+    <!-- MEME CONTAINER -->
+    <div id="memeContainer">
+        <img id="memeImage" src="#" alt="Generated Meme">
+        <h2 id="memeTextTop" class="memeText"></h2>
+        <h2 id="memeTextBottom" class="memeText"></h2>
+    </div>
+
+    <form id="memeForm">
+        <label for="topText">Top Text:</label>
+        <input type="text" id="topText" name="topText" required><br><br>
+        
+        <label for="bottomText">Bottom Text:</label>
+        <input type="text" id="bottomText" name="bottomText" required><br><br>
+
+        <label for="imageUrl">Image URL:</label>
+        <input type="text" id="imageUrl" name="imageUrl" required><br><br>
+        
+        <input type="submit" id="submitButton" value="Generate Meme">
+        <button id="deleteButton" type="button">Delete Meme</button> <!-- Delete button to the right of "Generate Meme" -->
+    </form>
+
+    <div id="errorContainer"></div>
+
+    <div id="addImage"></div>
+
+    <script src="underthehood.js"></script>
+</body>
+</html>
